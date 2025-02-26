@@ -1,0 +1,9 @@
+langchain[groq]
+python-dotenv
+langgraph
+langgraph-sdk
+langgraph-checkpoint-sqlite
+langsmith
+langchain-community
+langchain-core
+streamlit
