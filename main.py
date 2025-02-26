@@ -70,20 +70,20 @@ if st.session_state.get("user_id"):
             st.markdown(msg.content)
 # Next:
 # TO DO: Here's some starter code that works. Feel free to modify
-#    # User input
-#     if user_input := st.chat_input("Type your message..."):
-#         # Append user input
-#         st.session_state["messages"].append(HumanMessage(content=user_input))
+   # User input
+    if user_input := st.chat_input("Type your message..."):
+        # Append user input
+        st.session_state["messages"].append(HumanMessage(content=user_input))
 
-#         with st.chat_message("user"):
-#             st.markdown(user_input)
+        with st.chat_message("user"):
+            st.markdown(user_input)
 
-#         # Generate AI response (including system message, but not displaying it)
-#         with st.chat_message("assistant"):
-#             response = groq_llm.invoke(
-#                 [SystemMessage(content=characters[selected_character])] + st.session_state["messages"]
-#             )
-#             st.markdown(response.content)
+        # Generate AI response (including system message, but not displaying it)
+        with st.chat_message("assistant"):
+            response = groq_llm.invoke(
+                [SystemMessage(content=characters[selected_character])] + st.session_state["messages"]
+            )
+            st.markdown(response.content)
 
-#         # Store AI response
-#         st.session_state["messages"].append(AIMessage(content=response.content))
+        # Store AI response
+        st.session_state["messages"].append(AIMessage(content=response.content))
