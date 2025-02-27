@@ -2,11 +2,15 @@
 This is the first project of the Gamma team
 
 This repo contains the code base for the Gamma-o1-chatBot
-features:
-- text chat functionality
-- audio chat
-- video chat
-- chat history persistence
+
+### Features
+- Character-based AI personas with detailed descriptions.
+- Allows custom characters and descriptions(user-defined).
+- User authentication with usernames
+- Supports both text & audio inputs (via Whisper transcription).
+- Uses LangGraph for structured workflow-based chat (state management).
+- Uses Groq's Mixtral model (mixtral-8x7b-32768) and  Llama 3 model (llama-3.3-70b-specdec).
+
 
 ## USAGE
 1. The First step is to run the command below to install the required dependencies:<br>

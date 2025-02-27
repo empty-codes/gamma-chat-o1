@@ -7,3 +7,8 @@ langsmith
 langchain-community
 langchain-core
 streamlit
+streamlit-chat-widget
+streamlit_float
+typing-extensions
+uuid
+transformers
